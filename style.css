@@ -57,6 +57,9 @@
     .songItemContainer {
         width: 100%;
         margin-top: 10px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
     }
     
     .bottom {
@@ -76,7 +79,7 @@
         border-radius: 10px;
         position: fixed;
         top: 16%;
-        left: 50%;
+        left: 60%;
         transform: translate(-50, -50);
     }
     
@@ -101,6 +104,16 @@
         width: 100%;
         justify-content: space-between;
         height: 50px;
+        padding: 5px 0px;
+    }
+    
+    .songItem img {
+        margin-right: 10px;
+        width: 43px;
+    }
+    
+    .songName {
+        margin-right: 10px;
     }
     
     .songListPlay {
@@ -110,10 +123,6 @@
     
     .songListPlay span {
         margin-right: 10px;
-    }
-    
-    .songItem img {
-        width: 43px;
     }
     
     hr {
