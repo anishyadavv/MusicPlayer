@@ -1,0 +1,140 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    .logo img {
+        width: 42px;
+        padding: 0 8px;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-image: linear-gradient(to top, black, #1e2d41);
+    }
+    
+    nav {
+        color: white;
+        position: sticky;
+        top: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        height: 60px;
+        background-color: #1e2d41;
+        align-items: center;
+    }
+    
+    nav li {
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        min-height: 79vh;
+        color: white;
+        display: flex;
+        text-align: left;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+    .songList {
+        margin: 10px 0px;
+    }
+    
+    .songItemContainer {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .bottom {
+        position: sticky;
+        height: 130px;
+        background-color: black;
+        bottom: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .cover img {
+        width: 30vw;
+        border-radius: 10px;
+        position: fixed;
+        top: 16%;
+        left: 50%;
+        transform: translate(-50, -50);
+    }
+    
+    .icons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .icons i {
+        cursor: pointer;
+        margin: 0px 20px;
+    }
+    
+    #myProgressBar {
+        width: 80vw;
+    }
+    
+    .songItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        height: 50px;
+    }
+    
+    .songListPlay {
+        display: flex;
+        align-items: center;
+    }
+    
+    .songListPlay span {
+        margin-right: 10px;
+    }
+    
+    .songItem img {
+        width: 43px;
+    }
+    
+    hr {
+        width: 70%;
+        color: gray;
+        opacity: 0.5;
+    }
+    
+    @media only screen and (max-width: 1060px) {
+        /* For mobile phones: */
+        .cover {
+            display: none;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .container h1 {
+            font-size: 40px;
+        }
+        .songList {
+            margin: 10px auto;
+        }
+    }
