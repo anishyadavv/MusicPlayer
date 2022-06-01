@@ -79,8 +79,18 @@ myProgressBar.addEventListener('change', () => {
 })
 
 
+var minutes = 0;
+var seconds = 0;
+
 function timestamp() {
-    document.getElementById('time').innerText = parseInt(audioElement.currentTime);
+    let time = parseInt(audioElement.currentTime);
+    minutes = Math.floor(time / 60);
+    seconds = time - minutes * 60;
+    if (seconds < 10) {
+        document.getElementById('time').innerText = "0" + minutes + ":0" + seconds;
+    } else {
+        document.getElementById('time').innerText = "0" + minutes + ":" + seconds;
+    }
 }
 setInterval(timestamp, 1);
 
