@@ -65,6 +65,7 @@ masterPlay.addEventListener('click', () => {
         audioElement.pause();
         masterPlay.classList.remove('fa-circle-pause');
         masterPlay.classList.add('fa-circle-play');
+        makeAllPlays();
     }
 
 })
@@ -102,8 +103,10 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         audioElement.play();
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
-        document.getElementsByClassName('songInfo')[0].innerText = songs[songIndex].songName;
-        document.getElementsByClassName('cover')[0].src = songs[songIndex].coverPath;
+        document.getElementById('songInfoBottom').innerText = songs[songIndex].songName;
+        document.getElementById("cover").src = songs[songIndex].coverPath;
+        document.getElementById("cover1").src = songs[songIndex].coverPath;
+        document.getElementById("coverImg").src = songs[songIndex].coverPath;
 
     })
 })
@@ -120,7 +123,10 @@ document.getElementById('next').addEventListener('click', () => {
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
-    document.getElementsByClassName('songInfo')[0].innerText = songs[songIndex].songName;
+    document.getElementById('songInfoBottom').innerText = songs[songIndex].songName;
+    document.getElementById("cover").src = songs[songIndex].coverPath;
+    document.getElementById("cover1").src = songs[songIndex].coverPath;
+    document.getElementById("coverImg").src = songs[songIndex].coverPath;
 
 })
 document.getElementById('previous').addEventListener('click', () => {
@@ -134,5 +140,8 @@ document.getElementById('previous').addEventListener('click', () => {
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
-    document.getElementsByClassName('songInfo')[0].innerText = songs[songIndex].songName;
+    document.getElementById('songInfoBottom').innerText = songs[songIndex].songName;
+    document.getElementById("cover").src = songs[songIndex].coverPath;
+    document.getElementById("cover1").src = songs[songIndex].coverPath;
+    document.getElementById("coverImg").src = songs[songIndex].coverPath;
 })
